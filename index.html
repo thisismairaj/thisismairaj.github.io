@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Using Animate.css</title>
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css">
+	<link href="https://fastcdn.org/Animate.css/3.4.0/animate.min.css" rel="stylesheet">
+</head>
+<style>
+.header {
+	animation-delay: 1s;
+}
+.content {
+	background-color: #ccc;
+	padding:20px;
+}
+#section-1 {
+	animation-delay:1s;
+}
+#section-2{
+	animation-delay:2s;
+}
+.optin-form{
+	background: skyblue;
+	padding: 20px;
+	position:fixed;
+	bottom: 0;
+	right: 0;
+}
+.optin-form input{
+	display: block;
+	margin-bottom:8px;
+	padding:5px;
+}
+h1.logo {
+	animation-delay:2s;
+}
+.ticker{
+	background-color: orange;
+	color:#fff;
+	animation-iteration-count: infinite;
+}
+.shake-text {
+	position:absolute;
+	right: 10%;
+	transform: rotate(90deg);
+}
+ul.nav-custom {
+	margin: 0 auto;
+	background-color: brown;
+}
+.nav-custom a {
+	color: #fff;
+}
+</style>
+<body>
+<div class="container">
+	<header class="animated fadeInDown header bg-primary text-center p-5 text-white">
+		<h1 class="animated rubberBand logo">Practice Drill: animate.css</h1>
+	</header>
+	<nav>
+		<ul class="nav-custom nav justify-content-center">
+		<li class="nav-item"><a href="#" class="btn nav-link">Home</a></li>
+		<li class="nav-item"><a href="#" class="nav-link">About</a></li>
+		<li class="nav-item"><a href="#" class="nav-link">Support</a></li>
+		<li class="nav-item"><a href="#" class="nav-link">Contact</a></li>
+		</ul>
+		<form action="search-results.php" method="get" class="searchform">
+			<input type="text" name="search-input">
+			<input type="submit" name="submit-search" class="btn btn-sm">
+		</form>
+	</nav>
+	<div class="content">
+		<aside class="ticker animated pulse"><p class="p-1">This is a ticker. This should be repetitively animated</p></aside>
+		<section id="section-1" class="bg-faded  fadeInRight p-5 m-5">
+			<h3 class="animated jello">Section One</h3>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		</section>
+		<section id="section-2" class="bg-faded fadeInLeft p-5 m-5">
+			<h3 class="animated wobble">Section Two</h3>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		<button class="animated bounce btn btn-lg btn-warning" type="button">Animate!</button>
+		</section>
+		<section id="section-3" class="bg-info p-5 m-5 text-center">
+		<h3>Image Section</h3>
+			<img src="sparta.jpg" class="animated flash img-thumbnail">
+		</section>
+		<form class="optin-form animated fadeInRight" method="post" action="#">
+		<p>Subscribe to the million-dollar<br> Newsletter!</p>
+			<input type="text" name="name" placeholder="Enter your name...">
+			<input type="email" name="email" placeholder="Enter your email...">
+			<input type="submit" name="submit" class="btn btn-lg btn-success btn-block">
+		</form>
+	</div>
+</div>
+</body>
+</html>
