@@ -1,0 +1,50 @@
+.header {
+	animation-delay: 1s;
+}
+.content {
+	background-color: #ccc;
+	padding:20px;
+}
+#section-1 {
+	animation-delay:1s;
+}
+#section-2{
+	animation-delay:2s;
+}
+.optin-form{
+	background: skyblue;
+	padding: 20px;
+	position:fixed;
+	bottom: 0;
+	right: 0;
+}
+.optin-form input{
+	display: block;
+	margin-bottom:8px;
+	padding:5px;
+}
+h1.logo {
+	animation-delay:2s;
+}
+.ticker{
+	background-color: orange;
+	color:#fff;
+	animation-iteration-count: infinite;
+}
+.shake-text {
+	position:absolute;
+	right: 10%;
+	transform: rotate(90deg);
+}
+ul.nav-custom {
+	margin: 0 auto;
+	background-color: brown;
+}
+.nav-custom a {
+	color: #fff;
+}
+.self-promotion{
+	font-family:monospace;
+	color:#ccc;
+	text-align:right;
+}

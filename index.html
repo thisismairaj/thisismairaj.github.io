@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Using Animate.css</title>
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css">
+	<link href="https://fastcdn.org/Animate.css/3.4.0/animate.min.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<div class="container">
+	<header class="animated fadeInDown header bg-primary text-center p-5 text-white">
+		<h1 class="animated rubberBand logo">Practice Drill: animate.css</h1>
+		<p class="self-promotion">a <span style="background-color:#ccc;border-radius:2px;padding: 0 7px;"><a href="https://github.com/thisismairaj">@thisismairaj</a></span> production</p>
+	</header>
+	<nav>
+		<ul class="nav-custom nav justify-content-center">
+			<li class="nav-item"><a href="#" class="nav-link">Home</a></li>
+			<li class="nav-item"><a href="#" class="nav-link">Bootstrap 4</a></li>
+			<li class="nav-item"><a href="#" class="nav-link">BackboneJS</a></li>
+			<li class="nav-item"><a href="#" class="nav-link">AngularJS</a></li>
+			<li class="nav-item"><a href="#" class="nav-link">WaybackpointsJS</a></li>
+		</ul>
+	</nav>
+	<div class="content">
+		<aside class="ticker animated pulse"><p class="p-1">This is a ticker. This should be repetitively animated</p></aside>
+		<section id="section-1" class="bg-faded  fadeInRight p-5 m-5">
+			<h3 class="animated jello">Section One</h3>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		</section>
+		<section id="section-2" class="bg-faded fadeInLeft p-5 m-5">
+			<h3 class="animated wobble">Section Two</h3>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		<button class="animated bounce btn btn-lg btn-warning" type="button" onclick="document.getElementById('header').style.class='animated'">Animate!</button>
+		</section>
+		<section id="section-3" class="bg-info p-5 m-5 text-center">
+		<h3>Image Section</h3>
+			<img src="sparta.jpg" class="animated flash img-thumbnail">
+		</section>
+		<form class="optin-form animated fadeInRight" method="post" action="#">
+		<p>Subscribe to the million-dollar<br> Newsletter!</p>
+			<input type="text" name="name" placeholder="Enter your name...">
+			<input type="email" name="email" placeholder="Enter your email...">
+			<input type="submit" name="submit" class="btn btn-lg btn-success btn-block">
+		</form>
+	</div>
+</div>
+</body>
+</html>
